@@ -52,7 +52,7 @@ This option loads a previously generated plot, using the  Next browser to select
 
 When Enter is pressed, the plot will be loaded.
 
-![Image](img	/plotloaded.png "plot loaded")
+![Image](img/plotloaded.png "plot loaded")
 
 Hint - the menu can be [hidden](#show/hide-menu) so that all of the plot can be seen, e.g.
 
