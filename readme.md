@@ -1,3 +1,5 @@
+mention Nextbuild somewhere then do the nxtel stuff....
+
 # Next Fractal Explorer
 
 ### What is Next Fractal Explorer?
@@ -192,7 +194,7 @@ Next Fractal Explores comes with a program for PCs that allows you to generate p
 ![Image](img/DaisysandEdwinas.JPG "Daisys and Edwinas") 
 
 1. Windows users, open Command Prompt or Powershell, Linux users, open your preferred terminal app. cd to the "NFEPal" (or whatever it was named) directory.
-2. pcd.py can be run from the terminal/Command Prompt. It takes two arguments, the full path to the image, and the filename name that the generated palette will be saved to. In this example the palette will be called "funkyflorists". Therefore, on Linux the command would be "img/pcd.py DaisysandEdwnas.JPG funkyflorists". On Windows it would be python3 (or maybe python or py) pcd.py "DaisysandEdwinas" "funkyflorists"
+2. pcd.py can be run from the terminal/Command Prompt. It takes two arguments, the full path to the image, and the filename name that the generated palette will be saved to. In this example the palette will be called "funkyflorists". Therefore, on Linux the command would be `./pcd.py DaisysandEdwnas.JPG funkyflorists`. On Windows it would be `python3` (or maybe `python` or `py`) `pcd.py "DaisysandEdwinas" "funkyflorists"`
 3. The terminal will report when the palette has been generated, and will display the palette filename.
 
 ![Image](img/pcdrun.png)
