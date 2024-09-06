@@ -1,5 +1,3 @@
-mention Nextbuild somewhere then do the nxtel stuff....
-
 # Next Fractal Explorer
 
 ### What is Next Fractal Explorer?
