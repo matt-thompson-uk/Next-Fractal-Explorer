@@ -4,7 +4,7 @@
 
 A Mandelbrot Plotter for the ZX Spectrum Next.
 
-The original Spectrum from the 1980s with its 32x24, 8 colour resolution wasn't really up to the job...
+The original Spectrum from the 1980s with its 32x24, 8 colour resolution wasn't really capable of plotting the Mandlebot set...
 
 ![Image](img/Screenshot_20240615_075512.png "Mandelbrot")
 
@@ -12,21 +12,27 @@ But the Next, with 256 colours, higher resolutions and a faster CPU is more than
 
 ![Image](img/NFEfullplot.png "Next Mandelbrot")
 
-NFE is open source software, and licensed under the GPLV3.
-
 ### What can NFE do?
 
-It allows users to explore the Mandlebrot set on a ZX Spectrum Next. It can zoom in, and in, to reveal more detail and complexity, and make some very pretty pictures while it's about it.
+It allows users to explore the Mandlebrot set on a ZX Spectrum Next. It can zoom in and in and in,  to reveal more detail and complexity, and make some very pretty pictures while it's about it.
 
-NFE works in both 256x192 and 320x256 screen modes, has a color cycling mode, and comes with a program for Linux/Mac/Windows that allows you to generate colour palettes for NFE from images on your computer.
+NFE works in both 256x192 and 320x256 screen modes, has a color cycling mode, and comes with a program for Linux/Mac/Windows that generates colour palettes from .png and.jpg images. These palettes can then be loaded in NFE and applied to plots.
 
-### What's the point?
+### What's the point of it all?
 
-Fractals, on a Spectrum! No more needs to be said.
+Colourful, detailed fractals on a Spectrum. No more needs to be said!
+
+### Where to get it?
+
+[At the home page.](github.com/matt-thompson-uk/Next-Fractal-Explorer "github.com/matt-thompson-uk/Next-Fractal-Explorer")
+
+Note: **NFE is free and open source software, licensed under the GPL V3.0**
+
+Either clone the repository or download the latest release.
 
 ### Installation
 
-Copy the NFE directory to your NEXT SD Card.
+Copy the NFE directory that was cloned or included in a downloaded release to the NEXT SD Card.
 
 ### Running
 
@@ -52,7 +58,7 @@ When Enter is pressed, the plot will be loaded.
 
 ![Image](img/plotloaded.png "plot loaded")
 
-Hint - the menu can be [hidden](#show/hide-menu) so that all of the plot can be seen, e.g.
+Hint - the menu can be [hidden](#Show/Hide-Menu) so that all of the plot can be seen, e.g.
 
 ![Image](img/plotwithhiddenmenu.png "hidden menu")
 
@@ -104,13 +110,13 @@ The crosshairs can be moved to an area of interest.
 
 ![Image](img/zmchmoved.png "area of interest")
 
-Then, to plot this area zoom mode has to exited. This can be be done by pressing the 'z' key. A new window will appear so that the details of the new plot can be set and confirmed.
+Pressing the 'z' key will confirm that the selected area is to be plotted. A new window will appear so that the details of the new plot can be set.
 
 ![Image](img/zmconf1.png "Confirmation details")
 
 Note : the coordinates of the plot (Left, Right,Top, Bottom) can be edited, but it most cases there is no need to do this, as they are automatically set according to the  position and size of the crosshairs. As explained in the zoom mode help window, the coordinates should only be edited if entering some coordinates obtained from another Mandlebrot Plotting tool. 
 
-Pressing P toggles the plot size between the two available values 256x192 and 320x200. The larger size obviously has more detail but takes a correspondingly longer time to plot.
+Pressing P toggles the plot size between the two available values, 256x192 and 320x200. The larger size obviously has more detail but takes a correspondingly longer time to plot.
 
 When F is pressed the filename that the plot will be saved under can be entered. Note, there is no need to include the ".mnd" extension, as this is added automatically when the plot is saved.
 
@@ -120,11 +126,11 @@ When the relevant details have been entered e.g.
 
 ![Image](img/zmconf3.png "plot filename and size")
 
-pressing the S key will save the entered values, clear the scree and begin the plot of the zoomed in area..
+pressing the S key will save the entered values, clear the screen and begin the plot of the zoomed in area..
 
 ![Image](img/zminplotting.png "The plot in progress")
 
-Note that plotting can take some time, especially when zooming in closer and closer to detailed areas. Even with the Next running at top speed, plots such these can take two or three hours to complete. 
+Note that plotting can take some time, especially when zooming in closer and closer to detailed areas. Even with the Next running at top speed, plots such these can take two or three hours, perhaps even more, to complete. 
 
 The Final Result ... When the plot is finished it is automatically saved (using the specified name) into the Plots directory, and can be loaded from there at any time.
 
@@ -181,7 +187,7 @@ No explanation needed...
 Next Fractal Explores comes with a program for PCs that allows you to generate palettes by extracting colours from images (jpegs, pngs etc) on your PC or Laptop. This program, pcd.py, works on both Windows 10 and Linux. It is untested on Windows 11 and MacOs, but may well work on both of these platforms too.
 
  ##### pcd.py Installation Instructions 
-1. pcd.py uses the Python programming language, so this must be installed. Windows users will probably need to go to the Microsoft Store and search for and install the latest version of Python3. Linux users will most likely find that their distrubution has installed Python by default...
+1. pcd.py uses the Python programming language, so this must first be installed. Windows users will probably need to go to the Microsoft Store and search for and install the latest version of Python3. Linux users will most likely find that their distrubution has installed Python by default...
 2. Install [pipx](https://github.com/pypa/pipx "pipx home") a tool for installing python applications. Instructions can be found [here](https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx "pipx install") for Linux, Windows, and MacOs.
 3. Use pipx to install a python application, [Pylette](https://github.com/qTipTip/Pylette "pylette home page"), that extracts colours from images
 4. On your PC, create a directory somewhere in your home directory e.g. "NFEPal" and copy the pcd.py file to it. 
@@ -201,9 +207,9 @@ Some things to note
 
 * the .pal extension is added automatically to the palette filename, and the 256 following "funkyflorists" is added to indicate the number of colours in the palette. 
  
-* pcd.py works by running pylette to extract colours from the image, then it converts the rgb colours that pylette extracts from the image into the rgb3 format that the Next uses. Finally, it writes the converted values into a file format that can be read on the Next.
+* pcd.py works by running Pylette to extract colours from the image, then it converts the rgb colours that pylette extracts from the image into the rgb3 format that the Next uses. Finally, it writes the converted values into a file format that can be read on the Next.
  
-* The conversion to rgb3 will inevitably mean that colours in the generated palette may not be an exact match to the colours extracted by pylette. Also, very similar colours in the source image will end up being assigned the same rgb3 values, leading to blocks of duplicate colours in the palette.
+* The conversion from rgb down to rgb3 will inevitably mean that colours in the generated palette may not be an exact match to the colours extracted by pylette. Also, very similar colours in the source image will end up being assigned the same rgb3 values, leading to blocks of duplicate colours in the generated palette.
 
 ##### Copying generated palettes to the NEXT
 
@@ -240,9 +246,10 @@ Some more examples...
 ![Image](img/PV6.png "Misty256.pal")
 
 Yes, cats are cool!
+
 ### Under The Hood
 
-Next Fractal Explorer is mostly written in NextBASIC, and makes extensive use of banked code. 
+Next Fractal Explorer is mainly written in NextBASIC, and makes extensive use of banked code. 
 
 [Nextbuild](https://github.com/em00k/NextBuild "Nextbuild homepage") is used for the Mandelbrot plotting routine, giving a massive speed increase compared to NextBasic.
 
