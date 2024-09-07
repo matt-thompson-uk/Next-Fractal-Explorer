@@ -24,8 +24,9 @@ Colourful, detailed fractals on a Spectrum. No more needs to be said!
 
 ### Where to get it?
 
-[At the home page.](github.com/matt-thompson-uk/Next-Fractal-Explorer "github.com/matt-thompson-uk/Next-Fractal-Explorer")
+[At the home page.](https://github.com/matt-thompson-uk/Next-Fractal-Explorer "https://github.com/matt-thompson-uk/Next-Fractal-Explorer")
 
+https://github.com/matt-thompson-uk/Next-Fractal-Explorer
 Note: **NFE is free and open source software, licensed under the GPL V3.0**
 
 Either clone the repository or download the latest release.
