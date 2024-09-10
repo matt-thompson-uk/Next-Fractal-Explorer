@@ -257,4 +257,5 @@ Next Fractal Explorer is mainly written in NextBASIC, and makes extensive use of
 The palette rotating code used in Migraine mode is written in Z80 assembly language, and can be assembled with
 [sjasmplus](https://github.com/z00m128/sjasmplus "sjasmplus homepage").
 
+The colour palette used by Layer 1 text windows is based on the [Nord theme](https://www.nordtheme.com/docs/colors-and-palettes "https://www.nordtheme.com/docs/colors-and-palettes") 
 
